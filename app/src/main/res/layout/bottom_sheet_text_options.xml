@@ -1,0 +1,51 @@
+<!-- res/layout/bottom_sheet_text_options.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/bottom_sheet_container"
+android:orientation="vertical"
+android:visibility="gone"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="?android:attr/windowBackground"
+android:padding="16dp"
+android:layout_gravity="bottom">
+
+<!-- Add Heading Button -->
+
+    <!-- Add Text Box Button with Highlighted Background -->
+    <Button
+        android:id="@+id/btnAddTextBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add a text box"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_button_highlighted"
+        android:layout_marginTop="8dp"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/btnAddHeading"
+        android:text="Add Heading"
+        android:background="@drawable/rounded_button_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       />
+
+    <!-- Add Subheading Button -->
+    <Button
+        android:id="@+id/btnAddSubheading"
+        android:text="Add Subheading"
+        android:background="@drawable/rounded_button_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       />
+
+    <!-- Add Body Text Button -->
+    <Button
+        android:id="@+id/btnAddBodyText"
+        android:text="Add Body Text"
+        android:background="@drawable/rounded_button_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      />
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_corner_bg"
+    android:layout_margin="8dp">
+
+    <!-- ImageView for Poster Image with rounded corners -->
+    <ImageView
+        android:id="@+id/poster_image"
+        android:layout_width="127dp"
+        android:layout_height="198dp"
+        android:background="@drawable/rounded_corner_bg"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop" />
+</LinearLayout>

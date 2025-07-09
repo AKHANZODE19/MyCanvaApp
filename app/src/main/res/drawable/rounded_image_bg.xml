@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- First Layer: Rounded background (with corners) -->
+    <item>
+        <shape
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shape="rectangle">
+            <solid android:color="#FFFFFF" /> <!-- Optional background color -->
+            <corners android:radius="16dp" /> <!-- Rounded corners -->
+        </shape>
+    </item>
+
+    <!-- Second Layer: Your image background -->
+    <item>
+        <bitmap
+            android:layout_height="match_parent"
+
+            android:gravity="fill"
+            android:src="@drawable/canvaimage" />
+    </item>
+
+</layer-list>

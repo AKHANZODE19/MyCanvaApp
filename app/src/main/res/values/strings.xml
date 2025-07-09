@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MyCanvaApp</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_icon">Menu</string>
+    <string name="back_icon">Back</string>
+    <string name="pro_icon">Pro</string>
+    <string name="download_icon">Download</string>
+    <string name="search_fonts_combinations">Search fonts and combinations</string>
+    <string name="add_text_box">Add a text box</string>
+    <string name="add_heading">Add a heading</string>
+    <string name="add_subheading">Add a subheading</string>
+    <string name="background_image">Background Image</string>
+</resources>

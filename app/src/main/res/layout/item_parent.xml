@@ -1,0 +1,251 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+
+    <ImageView
+        android:id="@+id/header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="175dp"
+        android:gravity="center"
+        android:background="@drawable/rounded_corner_bg"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/rounded_image_bg" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/header_title"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="175dp"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        android:src="@drawable/rounded_image_bg">-->
+<!--&lt;!&ndash;        android:background="@drawable/rounded_corner_bg" &ndash;&gt;-->
+<!--    </TextView>-->
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/category_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:scrollbars="none"
+        android:nestedScrollingEnabled="false" />
+
+
+
+    <!-- Posters Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/educational_posters_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Posters"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/see_all_posters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="See all"
+            android:textColor="@color/black" />
+    </LinearLayout>
+        <!-- Horizontal RecyclerView for Posters -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/postersRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false" />
+
+
+    <!-- Resume Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Resumes_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Resumes"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/see_all_resume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="See all"
+            android:textColor="@color/black" />
+    </LinearLayout>
+    <!-- Horizontal RecyclerView for Resume -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ResumesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false" />
+
+
+
+    <!-- Instagram Posts Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Instagram_Posts_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Instagram Posts"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/see_all_InstagramPost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="See all"
+            android:textColor="@color/black" />
+    </LinearLayout>
+    <!-- Horizontal RecyclerView for Instagram_Posts -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Instagram_PostsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false" />
+
+
+
+    <!-- Phone Wallpapers Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Phone_wallpapers_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Phone Wallpapers"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/see_all_PhoneWallpapers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="See all"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <!-- Horizontal RecyclerView for Phone_Wallpapers -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/Phone_Wallpapers_RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false" />
+
+
+    <!-- Docs Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Docs_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Docs"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/see_all_Docs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="See all"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <!-- Horizontal RecyclerView for Docs_RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/Docs_RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false" />
+
+
+    <!-- Logos Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Logos_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Logos"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/see_all_logos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="See all"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <!-- Horizontal RecyclerView for Logos_RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Logos_RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false" />
+
+
+
+</LinearLayout>

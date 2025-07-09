@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:layout_margin="8dp">
+
+<!-- ImageView for Docs Image with rounded corners -->
+    
+    <ImageView
+        android:id="@+id/doc_image"
+        android:layout_width="135dp"
+        android:layout_height="140dp"
+        android:background="@drawable/rounded_corner_bg"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_document_placeholder" />
+
+<!--    <TextView-->
+<!--    android:id="@+id/doc_name"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="Document"-->
+<!--    android:textSize="14sp"-->
+<!--    android:gravity="center" />-->
+</LinearLayout>
+

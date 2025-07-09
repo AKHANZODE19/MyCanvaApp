@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/navigation_text"
+        android:icon="@drawable/ic_text"
+        android:title="Text"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/navigation_upload"
+        android:title="Upload"
+        android:icon="@drawable/ic_upload"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/navigation_design"
+        android:icon="@drawable/ic_design"
+        android:title="Image"
+        app:showAsAction="ifRoom" />
+</menu>

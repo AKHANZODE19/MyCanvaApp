@@ -1,0 +1,5 @@
+<!-- res/drawable/rounded_button_highlighted.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#9C27B0" /> <!-- Background color for highlighted button -->
+    <corners android:radius="12dp" /> <!-- Adjust the corner radius -->
+</shape>

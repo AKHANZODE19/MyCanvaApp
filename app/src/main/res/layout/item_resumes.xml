@@ -1,0 +1,25 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="8dp">
+
+        <!-- ImageView for resume Image with rounded corners -->
+    <ImageView
+        android:id="@+id/resume_image"
+        android:layout_width="140dp"
+        android:layout_height="195dp"
+        android:background="@drawable/rounded_corner_bg"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_resume_placeholder" />
+
+
+<!--        <TextView-->
+<!--        android:id="@+id/resume_name"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="14sp"-->
+<!--        android:gravity="center" />-->
+</LinearLayout>

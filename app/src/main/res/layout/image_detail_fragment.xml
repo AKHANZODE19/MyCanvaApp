@@ -1,0 +1,267 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Main LinearLayout container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+
+        <!-- Top Toolbar -->
+
+
+        <!-- Content Container with Background Image -->
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/top_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/gradient_background"
+            android:padding="8dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <!-- Menu Icon -->
+            <ImageView
+                android:id="@+id/icon_menu"
+                android:layout_width="40dp"
+                android:layout_marginEnd="15dp"
+                android:layout_height="wrap_content"
+                android:contentDescription="Menu"
+                android:src="@drawable/ic_menu1"
+                app:tint="@android:color/white" />
+
+            <!-- Back Icon -->
+            <ImageView
+                android:id="@+id/icon_backward"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:contentDescription="Back"
+                android:src="@drawable/ic_backward"
+                app:tint="@android:color/white" />
+
+            <!-- Back Icon -->
+            <ImageView
+                android:id="@+id/icon_forward"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="150dp"
+                android:contentDescription="fordward"
+                android:src="@drawable/ic_forward"
+                app:tint="@android:color/white" />
+
+            <!-- Spacer View to push icons to the sides -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <!-- Pro Icon -->
+            <ImageView
+                android:id="@+id/icon_pro"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:contentDescription="Pro"
+                android:src="@drawable/ic_pro"
+                app:tint="@android:color/white" />
+
+            <!-- Download Icon -->
+            <ImageView
+                android:id="@+id/icon_download"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:contentDescription="Download"
+                android:src="@drawable/ic_download"
+                app:tint="@android:color/white" />
+
+            <!-- Download Icon -->
+            <ImageView
+                android:id="@+id/icon_upload"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="Download"
+                android:src="@drawable/ic_upload"
+                app:tint="@android:color/white" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <FrameLayout
+            android:id="@+id/imageContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/fullScreenImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:contentDescription="Background Image" />
+        </FrameLayout>
+
+        <!-- Bottom Navigation Bar -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/windowBackground"
+            app:menu="@menu/bottom_navigation_menu2" />
+    </LinearLayout>
+
+    <!-- Bottom Sheet for Text Options -->
+    <LinearLayout
+        android:id="@+id/bottom_sheet_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="16dp"
+        android:visibility="gone"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <EditText
+            android:id="@+id/editTextSearchFonts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="8dp"
+            android:hint="Search Fonts and combinations" />
+
+        <Button
+            android:id="@+id/btnAddTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add a text box"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/rounded_button_highlighted"
+            android:layout_marginTop="8dp"
+            android:padding="12dp"
+            android:tag="Text" />
+
+        <EditText
+            android:id="@+id/defaultTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Default Text Style"
+            android:drawablePadding="8dp" />
+
+        <Button
+            android:id="@+id/btnAddHeading"
+            android:text="Add a heading"
+            android:textSize="25dp"
+            android:textAllCaps="false"
+            android:background="@drawable/rounded_button_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:tag="heading" />
+
+        <!-- Add Subheading Button -->
+        <Button
+            android:id="@+id/btnAddSubheading"
+            android:text="Add a subheading"
+            android:textSize="20dp"
+            android:textAllCaps="false"
+            android:background="@drawable/rounded_button_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:tag="subheading" />
+
+        <!-- Add Body Text Button -->
+        <Button
+            android:id="@+id/btnAddBodyText"
+            android:text="Add a little bit of body text"
+            android:textSize="16dp"
+            android:textAllCaps="false"
+            android:background="@drawable/rounded_button_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:tag="bodytext" />
+
+        <!-- Formatting Options Container -->
+        <!-- Bottom Sheet for Text Formatting Options -->
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="@color/white"
+            android:elevation="4dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:id="@+id/text_formatting_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:visibility="gone"
+            android:gravity="center"
+            android:background="@color/white"
+            android:elevation="4dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btnBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B" />
+
+            <Button
+                android:id="@+id/btnItalic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I" />
+
+            <Button
+                android:id="@+id/btnColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Color" />
+
+            <Button
+                android:id="@+id/btnUnderline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="U" />
+
+            <Button
+                android:id="@+id/btnIncreaseFontSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A+" />
+
+            <Button
+                android:id="@+id/btnDecreaseFontSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A-" />
+
+            <!-- Button to Change Font -->
+            <Button
+                android:id="@+id/btnChangeFont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Font" />
+
+            <!-- Additional Formatting Buttons... -->
+        </LinearLayout>
+        </HorizontalScrollView>
+
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

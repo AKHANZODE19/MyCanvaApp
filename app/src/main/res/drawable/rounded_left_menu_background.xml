@@ -1,0 +1,19 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Set the background color of the menu -->
+    <solid android:color="#FFFFFF" /> <!-- White background -->
+
+    <!-- Define the rounded corners -->
+    <corners android:radius="16dp" /> <!-- Adjust the radius as needed -->
+
+    <!-- Optional: Add padding -->
+    <padding
+        android:left="8dp"
+        android:right="8dp"
+        android:top="8dp"
+        android:bottom="8dp" />
+
+    <!-- Optional: Add a border/stroke -->
+    <stroke
+        android:width="2dp"
+        android:color="#D1D1D1" /> <!-- Light gray border -->
+</shape>

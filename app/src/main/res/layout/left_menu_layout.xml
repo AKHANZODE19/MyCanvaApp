@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/left_menu_layout"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_left_menu_background"
+    android:visibility="gone"
+    android:padding="16dp">
+
+    <TextView
+    android:id="@+id/menu_header"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Menu"
+    android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"
+    android:layout_marginVertical="16dp"/>
+
+        <!-- Add your menu items here -->
+    <TextView
+    android:id="@+id/menu_item_1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Item 1" />
+
+    <TextView
+    android:id="@+id/menu_item_2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Item 2" />
+
+    <!-- Add more items as needed -->
+    </LinearLayout>
